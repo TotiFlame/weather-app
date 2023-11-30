@@ -2,6 +2,7 @@ import Searchbar from "./components/Searchbar"
 import InfoCards from "./components/InfoCards";
 import Image from "next/image"
 import { FaLocationDot } from "react-icons/fa6";
+import weather from "./components/CardsInfo.json";
 
 
 export default function Home() {
@@ -35,10 +36,9 @@ export default function Home() {
 			<div className="relative flex-1 p-8 flex justify-center">
 				<span className="text-gray-400">Today</span>
 				<div className="absolute w-5/6 h-full grid grid-cols-4 mt-8">
-					<InfoCards />
-					<InfoCards />
-					<InfoCards />
-					<InfoCards />
+					{weather.map(item => (
+						<InfoCards title={item.title} number={item.number} measurement={item.measurement} />
+					))}
 				</div>
 			</div>
 		</section>

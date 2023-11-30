@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Humidity",
+        "number": 65,
+        "measurement": "%"
+    },
+    {
+        "title": "Wind Speed",
+        "number": 89,
+        "measurement": "km/h"
+    },
+    {
+        "title": "Rain",
+        "number": 3.16,
+        "measurement": "1h"
+    },
+    {
+        "title": "Clouds",
+        "number": 30,
+        "measurement": "%"
+    }
+]
